@@ -1,0 +1,9 @@
+for Merge the code from Rudraa to main
+
+step 1: git checkout main
+step 2: git pull origin main
+step 3: git merge Rudraa
+step 4: git push origin main
+
+-------------X---------------------
+
