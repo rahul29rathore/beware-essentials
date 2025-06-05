@@ -1,0 +1,40 @@
+[2025-06-05 10:26:37] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:30:39] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:30:40] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:31:15] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:32:56] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:32:57] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:33:32] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:36:37] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:36:39] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
+[2025-06-05 10:37:01] local.ERROR: Cannot declare class App\Http\Livewire\Admin\Categories, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Livewire\\Admin\\Categories, because the name is already in use at D:\\beware-essentials\\app\\Http\\Livewire\\Admin\\Categories1111.php:14)
+[stacktrace]
+#0 {main}
+"} 
