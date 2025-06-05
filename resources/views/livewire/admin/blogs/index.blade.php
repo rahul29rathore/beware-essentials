@@ -3,7 +3,7 @@
 <div class="content">
   <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
 	 <div>
-		<h1>Blogs</h1>
+		<h1>Blog</h1>
 		<p class="breadcrumbs"><span><a href="{{ route('admin.dashboard') }}">Dashboard</a></span> <span><i class="mdi mdi-chevron-right"></i></span>blogs</p>
 	 </div>
 	 <div><a href="{{ route('admin.blogs.create') }}" class="btn btn-primary">Add Blog</a></div>

@@ -15,7 +15,7 @@ class blogsModel extends Model implements HasMedia
     protected $table = "blogs";
 
     protected $fillable = [
-       'category_id','title', 'slug' ,'short_description' ,'auther','tags','description','status'    
+       'category_id','title', 'slug' ,'short_description' ,'auther','tags','description','status','meta_title','meta_description','meta_keywords','other','','','','','',
     ];
 
 

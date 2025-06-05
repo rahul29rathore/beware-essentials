@@ -86,15 +86,15 @@
 <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('distributer')->html();
-} elseif ($_instance->childHasBeenRendered('V2Dajch')) {
-    $componentId = $_instance->getRenderedChildComponentId('V2Dajch');
-    $componentTag = $_instance->getRenderedChildComponentTagName('V2Dajch');
+} elseif ($_instance->childHasBeenRendered('0sNfL3J')) {
+    $componentId = $_instance->getRenderedChildComponentId('0sNfL3J');
+    $componentTag = $_instance->getRenderedChildComponentTagName('0sNfL3J');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('V2Dajch');
+    $_instance->preserveRenderedChild('0sNfL3J');
 } else {
     $response = \Livewire\Livewire::mount('distributer');
     $html = $response->html();
-    $_instance->logRenderedChild('V2Dajch', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('0sNfL3J', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?><?php /**PATH D:\beware-essentials\resources\views/layouts/_shared/header.blade.php ENDPATH**/ ?>
