@@ -22,6 +22,7 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin\\'], function () {
 	Route::resource('products', 'ProductController');
 	Route::resource('blogs', 'BlogsController');
 	Route::resource('categories', 'CategoryController');
+	Route::resource('seotags', 'SeoTagsController');
 	Route::view('sub-categories', 'livewire.admin.categories.index')->name('categories.sub-categories.index');
 	Route::view('product-types', 'livewire.admin.product_types.index')->name('product-types.index');
 	Route::view('product-leads', 'livewire.admin.products.leads.index')->name('product-leads.index');

@@ -153,6 +153,21 @@
 						</ul>
 					</div>
 				</li>
+				<li class="has-sub">
+					<a class="sidenav-item-link" href="javascript:void(0)">
+						<i class="mdi mdi-account-group"></i> 
+						<span class="nav-text">Seo Tags</span><b class="caret"></b>
+					</a>
+					<div class="collapse">
+						<ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+							<li>
+								<a class="sidenav-item-link" href="{{ route('admin.seotags.index') }}">
+									<span class="nav-text">Seo Pages</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
 				<!--li class="has-sub"><a class="sidenav-item-link" href="javascript:void(0)"><i
 							class="mdi mdi-cart"></i> <span class="nav-text">Orders</span> <b
 							class="caret"></b></a>

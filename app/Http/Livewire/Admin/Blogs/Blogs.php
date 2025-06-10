@@ -44,7 +44,11 @@ class Blogs extends Component
         $blogs = blogsModel::when($this->search, function($q)
         {
                             $q->where('id', 'like', '%'.($this->search).'%')
-                              ->orWhere('name', 'like', '%'.($this->search).'%')
+                              ->orWhere('title', 'like', '%'.($this->search).'%')
+                              ->orWhere('meta_description', 'like', '%'.($this->search).'%')
+                              ->orWhere('meta_keywords', 'like', '%'.($this->search).'%')
+                              ->orWhere('auther', 'like', '%'.($this->search).'%')
+                              ->orWhere('created_at', 'like', '%'.($this->search).'%')
 							 ->orWhereHas('category', function ( $query ) {
 								$query->where('name', 'like', '%'.($this->search).'%');
 								});

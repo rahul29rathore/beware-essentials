@@ -1,5 +1,14 @@
 @extends('layouts.app')
 @section('content')
+
+
+@if($seotags)
+    @section('title'){{ $seotags->meta_title ?? "beware.essential.com" }}@endsection
+    @section('meta_description'){{ $seotags->meta_description ?? "meta title" }}@endsection
+    @section('meta_keywords'){{ $seotags->meta_keywords ?? "meta title" }}@endsection
+    @section('other'){!! $seotags->other !!}@endsection
+@endif
+
 <section class="main-title-section-wrapper default m-0 p-0" style="background:transparent;">
     <div class="container">
         <div class="row">
@@ -20,12 +29,41 @@
     <div class="container">
         <div class="row pt-0">
             <div class="col-lg-12 mb-5" data-aos="fade-right">
-                <h3 class="mb-0 mt-5">About Company</h3>
-                <h5>The Best Security Systems That You Need</h5>
+                <h3 class="mb-0 mt-5">BEWARE CCTV & Surveillance – Your Security is essential! </h3>
+                <h5>Your Trusted Partner in Surveillance & Security Solutions</h5>
                 <div class="dt-sc-small-separator "></div>
-                <p>We are committed to providing high-quality CCTV Surveillance Systems for commercial, residential, and industrial applications. </p>
-                <p>Our mission is to enhance security and safety by offering innovative, reliable, and affordable security solutions that meet the evolving needs of our customers. We strive to be a leader in the surveillance industry, setting the standard for excellence in product quality, customer service, and technological innovation.</p>
+                <p>Welcome to Beware Essentials, India’s fast-emerging brand in video surveillance, electronic security, and smart automation—tailored for Warehouses, Industrial, residential, commercial, industrial, and institutional needs.</p>
+                <p>Founded with a mission to simplify security without compromising on technology, Beware Essentials offers a full suite of CCTV cameras, security sensors, metal detectors, access control systems, and networking infrastructure, powered by the latest in AI, IoT, and cloud connectivity.</p>
+                <p>Whether you need a home CCTV system, a factory-wide surveillance grid, or a multi-location monitoring setup, we bring you the tools to monitor, deter, and protect—seamlessly and affordably.</p>
             </div>
+            
+            <div class="col-lg-12 mb-5" data-aos="fade-right">
+                <h5>Why Choose Beware Essentials?</h5>
+                <div class="dt-sc-small-separator "></div>
+                <ul class="list" style="margin-left: 18px;">
+                    <li>Make-in-India with Global Tech </li>
+                    <li>Smart AI-Powered Features – Night Vision, Motion Alerts, Human Detection</li>
+                    <li>Rugged for Indian Conditions – Heat, dust, voltage fluctuations – no problem</li>
+                    <li>Mobile App Support – View live feeds, alerts & playback from anywhere</li>
+                    <li>Trusted by 100+ Clients – Across logistics parks, retail chains, schools & homes</li>
+                    <li>PAN India Delivery & Installation – Warehouses & field support in all major cities</li>
+                    <li>B2B & Government-Ready – Enterprise integrations, large-scale project capability</li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-12 mb-5" data-aos="fade-right">
+                <h5>Serving Diverse Sectors</h5>
+                <div class="dt-sc-small-separator "></div>
+                <ul class="list" style="margin-left: 18px;">
+                    <li>Warehouses & Logistics Parks</li>
+                    <li>Factories & Industrial Sites</li>
+                    <li>Residential Apartments & Villas</li>
+                    <li>Retail Stores & Chains</li>
+                    <li>Educational Institutes & Hospitals</li>
+                    <li>Government & Public Safety Zones</li>
+                </ul>
+            </div>
+            
             <div class="col-lg-12 mb-5">
                 <img src="{{asset('assets/images/collarge.png')}}" class="img-fluid" alt="">
             </div>
@@ -38,7 +76,7 @@
                             </div>
                             <div class="icon-content">
                                 <h4><a href="#" title="" target="_self" tabindex="0">Our Mission</a></h4>
-                                <p>To exceed our customers’ expectations by delivering innovative and bespoke Security Surveillance systems and solutions.</p>
+                                <p>To make next-gen surveillance accessible, reliable, and affordable for every Indian household and business—backed by innovation, service, and trust.</p>
                             </div>
                         </div>
                     </div>
@@ -91,14 +129,19 @@
                     </div>
                 </div>
             </div>
+            
+            
+            
+            
+            
             {{-- <div class="col-lg-6" data-aos="fade-right">
                 <img src="{{asset('assets/images/traffic-camera.jpg')}}" class="img-fluid br-20" alt="">
-            </div>
-            <div class="col-lg-6 pt-5" data-aos="fade-left">
-                <p>With our vast experience, in-house, R&D team, and technical know-how, we are fully equipped and capable of providing world-class solutions, customized according to the requirement of our clients, making sure you can monitor people, places, and assets important to you anytime, anywhere.</p>
-                <p></p>
-            </div> --}}
         </div>
+        <div class="col-lg-6 pt-5" data-aos="fade-left">
+            <p>With our vast experience, in-house, R&D team, and technical know-how, we are fully equipped and capable of providing world-class solutions, customized according to the requirement of our clients, making sure you can monitor people, places, and assets important to you anytime, anywhere.</p>
+            <p></p>
+        </div> --}}
+    </div>
     </div>
 </section>
 @endsection

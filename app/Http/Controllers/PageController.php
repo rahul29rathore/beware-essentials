@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\SeoTagsModel;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -11,9 +12,7 @@ class PageController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 
     /**
      * Show the application dashboard.
@@ -22,6 +21,7 @@ class PageController extends Controller
      */
     public function index($slug)
     {
-        return view('pages.'.$slug);
+        $seotags = SeoTagsModel::where("slug", $slug)->first();
+        return view('pages.' . $slug, compact('seotags'));
     }
 }

@@ -33,7 +33,7 @@
                 <img class="w-100 br-20 mb-3" src="{{ $blogger['product_image_url'] }}" alt="edit">
 
                 @endif
-                
+
                 <h4>{{$blogger['title']}}</h4>
                 <p class="post-date text-primary mb-4">Posted on {{ $blogger['created_at']->format('jS M Y') }}</p>
                 <p>{!! $blogger['description'] !!}</p>

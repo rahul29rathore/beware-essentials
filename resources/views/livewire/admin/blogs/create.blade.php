@@ -72,17 +72,7 @@
                         <span class="text-danger">{{ $message }} </span>
                         @enderror
                     </div>
-                    <!--div class="col-md-4 mb-25"><label class="form-label">Colors</label><input type="color" class="form-control form-control-color" id="exampleColorInput1" value="#ff6191" title="Choose your color"> <input type="color" class="form-control form-control-color" id="exampleColorInput2" value="#33317d" title="Choose your color"> <input type="color" class="form-control form-control-color" id="exampleColorInput3" value="#56d4b7" title="Choose your color"> <input type="color" class="form-control form-control-color" id="exampleColorInput4" value="#009688" title="Choose your color"></div>
-			   <div class="col-md-8 mb-25">
-				<label class="form-label">Size</label>
-				<div class="form-checkbox-box">
-				 <div class="form-check form-check-inline"><input type="checkbox" name="size1" value="size"><label>S</label></div>
-				 <div class="form-check form-check-inline"><input type="checkbox" name="size1" value="size"><label>M</label></div>
-				 <div class="form-check form-check-inline"><input type="checkbox" name="size1" value="size"><label>L</label></div>
-				 <div class="form-check form-check-inline"><input type="checkbox" name="size1" value="size"><label>XL</label></div>
-				 <div class="form-check form-check-inline"><input type="checkbox" name="size1" value="size"><label>XXL</label></div>
-				</div>
-			</div-->
+                  
                     <div class="col-md-6 mb-5">
                         <label class="form-label">Auther <span></span></label>
                         <input wire:model.lazy="blog.auther" type="text" class="form-control">
@@ -90,13 +80,7 @@
                         <span class="text-danger">{{ $message }} </span>
                         @enderror
                     </div>
-                    <!--  <div class="col-md-6 mb-5">
-                <label class="form-label">Quantity</label>
-                <input wire:model.lazy="product.qty" type="number" class="form-control" id="quantity1">
-                @error('product.qty')
-                    <span class="text-danger">{{ $message }} </span>
-                @enderror
-            </div> -->
+                   
                     <div wire:ignore class="col-md-12 mb-5">
                         <label class="form-label">Key Features</label>
                         <div
