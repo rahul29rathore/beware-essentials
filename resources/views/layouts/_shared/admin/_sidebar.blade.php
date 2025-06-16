@@ -153,7 +153,6 @@
 						</ul>
 					</div>
 				</li>
-<<<<<<< HEAD
 				<li class="has-sub">
 					<a class="sidenav-item-link" href="javascript:void(0)">
 						<i class="mdi mdi-account-group"></i> 
@@ -169,8 +168,6 @@
 						</ul>
 					</div>
 				</li>
-=======
->>>>>>> Rudraa
 				<!--li class="has-sub"><a class="sidenav-item-link" href="javascript:void(0)"><i
 							class="mdi mdi-cart"></i> <span class="nav-text">Orders</span> <b
 							class="caret"></b></a>

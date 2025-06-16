@@ -1,8 +1,4 @@
 @extends('layouts.app')
-<<<<<<< HEAD
-
-=======
->>>>>>> Rudraa
 @section('stylesheet')
 <link rel="stylesheet" href="{{ asset('assets/css/woocommerce.css') }}">
 <style>
@@ -10,7 +6,6 @@
     overflow: initial;
 }
 </style>
-<<<<<<< HEAD
 
 @endsection
 
@@ -19,9 +14,6 @@
 @section('meta_keywords') CCTV, Biometric, Security, DVR, Detector,Beware, Beware Essentials, Camera @endsection
 @section('other')  @endsection
 
-=======
-@endsection
->>>>>>> Rudraa
 @section('content')
 	@if(\Request::route()->getName() == "product")
 		@livewire('frontend.product')

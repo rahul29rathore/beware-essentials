@@ -32,17 +32,10 @@ class CreateUpdateBlog extends Component
 		'blog.short_description'  => 'required|max:255',
 		'blog.description'  => 'required',
 		'blog.tags'    => 'required',
-<<<<<<< HEAD
 		'blog.meta_title' => 'nullable',
 		'blog.meta_description' => 'nullable',
 		'blog.meta_keywords' => 'nullable',
 		'blog.other' => 'nullable',
-=======
-		'blog.meta_title'=> 'nullable',
-		'blog.meta_description'=> 'nullable',
-		'blog.meta_keywords'=> 'nullable',
-		'blog.other'=> 'nullable',
->>>>>>> Rudraa
 	];
 
 
@@ -70,13 +63,10 @@ class CreateUpdateBlog extends Component
 		$this->validateOnly($property);
 	}
 
-<<<<<<< HEAD
 	public function updatedBlogTitle($value)
 	{
 		$this->blog['slug'] = Str::slug($value, '-');
 	}
-=======
->>>>>>> Rudraa
 
 	protected $validationAttributes = [
 		'blog.title'   => 'Blog name',

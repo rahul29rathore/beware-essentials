@@ -19,10 +19,7 @@
 <section id="blog" class="content-full-width">
     <div class="container py-5">
         <div class="row">
-<<<<<<< HEAD
             <!-- Test -->
-=======
->>>>>>> Rudraa
             @foreach($blog as $blogger)
             @section('title'){{ $blogger->meta_title ?? "beware.essential.com"}}@endsection
             @section('meta_description'){{ $blogger->meta_description ?? "meta title"}}@endsection
