@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<<<<<<< HEAD
 
 
 @if($seotags)
@@ -9,6 +10,8 @@
     @section('other'){!! $seotags->other !!}@endsection
 @endif
 
+=======
+>>>>>>> Rudraa
 <section class="main-title-section-wrapper default m-0 p-0" style="background:transparent;">
     <div class="container">
         <div class="row">
@@ -29,6 +32,7 @@
     <div class="container">
         <div class="row pt-0">
             <div class="col-lg-12 mb-5" data-aos="fade-right">
+<<<<<<< HEAD
                 <h3 class="mb-0 mt-5">BEWARE CCTV & Surveillance – Your Security is essential! </h3>
                 <h5>Your Trusted Partner in Surveillance & Security Solutions</h5>
                 <div class="dt-sc-small-separator "></div>
@@ -64,6 +68,14 @@
                 </ul>
             </div>
             
+=======
+                <h3 class="mb-0 mt-5">About Company</h3>
+                <h5>The Best Security Systems That You Need</h5>
+                <div class="dt-sc-small-separator "></div>
+                <p>We are committed to providing high-quality CCTV Surveillance Systems for commercial, residential, and industrial applications. </p>
+                <p>Our mission is to enhance security and safety by offering innovative, reliable, and affordable security solutions that meet the evolving needs of our customers. We strive to be a leader in the surveillance industry, setting the standard for excellence in product quality, customer service, and technological innovation.</p>
+            </div>
+>>>>>>> Rudraa
             <div class="col-lg-12 mb-5">
                 <img src="{{asset('assets/images/collarge.png')}}" class="img-fluid" alt="">
             </div>
@@ -76,7 +88,11 @@
                             </div>
                             <div class="icon-content">
                                 <h4><a href="#" title="" target="_self" tabindex="0">Our Mission</a></h4>
+<<<<<<< HEAD
                                 <p>To make next-gen surveillance accessible, reliable, and affordable for every Indian household and business—backed by innovation, service, and trust.</p>
+=======
+                                <p>To exceed our customers’ expectations by delivering innovative and bespoke Security Surveillance systems and solutions.</p>
+>>>>>>> Rudraa
                             </div>
                         </div>
                     </div>
@@ -129,6 +145,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             
             
             
@@ -142,6 +159,16 @@
             <p></p>
         </div> --}}
     </div>
+=======
+            {{-- <div class="col-lg-6" data-aos="fade-right">
+                <img src="{{asset('assets/images/traffic-camera.jpg')}}" class="img-fluid br-20" alt="">
+            </div>
+            <div class="col-lg-6 pt-5" data-aos="fade-left">
+                <p>With our vast experience, in-house, R&D team, and technical know-how, we are fully equipped and capable of providing world-class solutions, customized according to the requirement of our clients, making sure you can monitor people, places, and assets important to you anytime, anywhere.</p>
+                <p></p>
+            </div> --}}
+        </div>
+>>>>>>> Rudraa
     </div>
 </section>
 @endsection

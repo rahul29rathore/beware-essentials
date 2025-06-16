@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Auth;
+>>>>>>> Rudraa
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,7 +31,11 @@ Route::get('/{slug}', [
 ])->where('slug', 'about-us|terms-and-conditions|support|privacy-policy|contact-us|career|blog-detail|thank-you');
 
 Route::get('/blogs', 'Admin\BlogsController@allblogs')->name('blogs');
+<<<<<<< HEAD
 Route::get('/blog-detail/{slug}', 'Admin\BlogsController@blogdetail')->name('blog-detail');
+=======
+Route::get('/blog-detail/{id}', 'Admin\BlogsController@blogdetail')->name('blog-detail');
+>>>>>>> Rudraa
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::view('/landing', 'pages.landing')->name('landing');

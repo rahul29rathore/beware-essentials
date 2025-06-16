@@ -5,8 +5,11 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\blogsModel;
+<<<<<<< HEAD
 use App\Http\Livewire\Admin\seotags\seotags;
 use App\SeoTagsModel;
+=======
+>>>>>>> Rudraa
 
 class BlogsController extends Controller
 {
@@ -17,13 +20,19 @@ class BlogsController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
 
         return view('livewire.admin.blogs.index');
+=======
+        //
+          return view('livewire.admin.blogs.index');
+>>>>>>> Rudraa
     }
 
     public function allblogs()
     {
         $blogs = blogsModel::orderBy('id', 'DESC')->get();
+<<<<<<< HEAD
         $seotags = SeoTagsModel::where("slug", "blogs")->first();
 
         return view('pages.blog', compact('blogs', 'seotags'));
@@ -37,6 +46,21 @@ class BlogsController extends Controller
         //dd($blog);
 
         return view('pages.blog-detail', compact('blog'));
+=======
+         return view('pages.blog',compact('blogs'));
+    }
+
+
+    public function blogdetail($id)
+    {
+
+         $blog = blogsModel::where('id',$id)->get();
+
+        //dd($blog);
+
+         return view('pages.blog-detail',compact('blog'));
+
+>>>>>>> Rudraa
     }
     /**
      * Show the form for creating a new resource.

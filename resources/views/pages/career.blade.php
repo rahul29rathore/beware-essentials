@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<<<<<<< HEAD
 
 
 @if($seotags)
@@ -9,6 +10,8 @@
 @endif
 
 
+=======
+>>>>>>> Rudraa
 @section('content')
 <section class="main-title-section-wrapper default" style="background:transparent;">
     <div class="container">

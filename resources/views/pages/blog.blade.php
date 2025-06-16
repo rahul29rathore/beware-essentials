@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<<<<<<< HEAD
 
 @if($seotags)
     @section('title'){{ $seotags->meta_title ?? "beware.essential.com" }}@endsection
@@ -9,6 +10,8 @@
 @endif
 
 
+=======
+>>>>>>> Rudraa
 <section class="main-title-section-wrapper default m-0 p-0" style="background:transparent;">
     <div class="container">
         <div class="row">
@@ -32,6 +35,7 @@
             @foreach($blogs as $blog)
 
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+<<<<<<< HEAD
                 <a href="{{ route('blog-detail',$blog->slug) }}" class="blog-container">
                     <div class="img-box">
                         @if (isset($blog['image']))
@@ -41,6 +45,17 @@
 
                         @endif
 
+=======
+                <a href="{{ route('blog-detail',$blog->id) }}" class="blog-container">
+                    <div class="img-box">
+                        @if (isset($blog['image']))
+                            <img class="img-fluid" src="{{ $blog['image']->temporaryUrl() }}" alt="edit">
+                            @elseif (!empty($blog['product_image_url'])) 
+                            <img class="img-fluid" src="{{ $blog['product_image_url'] }}" alt="edit">
+                            
+                            @endif
+                        
+>>>>>>> Rudraa
                     </div>
                     <h4>{{$blog->title}}</h4>
                     <p class="post-date">Posted on {{ $blog->created_at->format('j M Y') }}</p>
@@ -49,7 +64,11 @@
             </div>
 
             @endforeach
+<<<<<<< HEAD
             <!--  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+=======
+           <!--  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+>>>>>>> Rudraa
                 <a href="{{ route('page', 'blog-detail') }}" class="blog-container">
                     <div class="img-box">
                         <img src="{{asset('assets/images/grid-2.jpg')}}" class="img-fluid">

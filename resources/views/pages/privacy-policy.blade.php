@@ -1,10 +1,13 @@
 @extends('layouts.app')
+<<<<<<< HEAD
 @if($seotags)
     @section('title'){{ $seotags->meta_title ?? "beware.essential.com" }}@endsection
     @section('meta_description'){{ $seotags->meta_description ?? "meta title" }}@endsection
     @section('meta_keywords'){{ $seotags->meta_keywords ?? "meta title" }}@endsection
     @section('other'){!! $seotags->other !!}@endsection
 @endif
+=======
+>>>>>>> Rudraa
 @section('content')
     <section class="main-title-section-wrapper default" style="background:transparent;">
         <div class="container">

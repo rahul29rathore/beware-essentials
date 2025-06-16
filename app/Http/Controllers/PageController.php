@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\SeoTagsModel;
+=======
+>>>>>>> Rudraa
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -12,7 +15,13 @@ class PageController extends Controller
      *
      * @return void
      */
+<<<<<<< HEAD
     public function __construct() {}
+=======
+    public function __construct()
+    {
+    }
+>>>>>>> Rudraa
 
     /**
      * Show the application dashboard.
@@ -21,7 +30,13 @@ class PageController extends Controller
      */
     public function index($slug)
     {
+<<<<<<< HEAD
         $seotags = SeoTagsModel::where("slug", $slug)->first();
         return view('pages.' . $slug, compact('seotags'));
     }
 }
+=======
+        return view('pages.'.$slug);
+    }
+}
+>>>>>>> Rudraa

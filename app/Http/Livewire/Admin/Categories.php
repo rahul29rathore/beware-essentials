@@ -13,6 +13,7 @@ use Illuminate\Support\Arr;
 
 class Categories extends Component
 {
+<<<<<<< HEAD
 	use WithPagination, WithFileUploads;
 
 	public $template = 'main-category';
@@ -20,10 +21,20 @@ class Categories extends Component
 	public $search = '';
 	public $perpage = 10;
 
+=======
+    use WithPagination, WithFileUploads;
+	
+	public $template = 'main-category';
+	
+    public $search  = '';
+    public $perpage = 10;
+   
+>>>>>>> Rudraa
 	public $category;
 	public $selected_id;
 	public $selected;
 	public $parent_categories;
+<<<<<<< HEAD
 
 	public $sortBy = 'created_at';
 	public $sortOrder = 'desc';
@@ -106,16 +117,102 @@ class Categories extends Component
 		]);
 	}
 
+=======
+	
+    public $sortBy    = 'created_at';
+    public $sortOrder = 'desc';
+   
+	protected $queryString = ['search'];
+	protected $listeners   = ['confirmDelete' => 'delete'];
+	
+	protected $rules = [
+        'category.name'  => 'required|max:255',
+        'category.slug'  => 'required|max:255',
+        'category.short_description'  => 'nullable|max:255',
+    ];
+	
+	protected $validationAttributes = [
+        'category.name'   => 'category name',
+		'category.slug'   => 'category slug',
+		'category.image'  => 'category image',
+		'category.short_description'  => 'category short description',
+		'category.parent_id'  => 'parent category',
+    ];
+	
+    public function mount()
+    {
+        $this->resetPage();
+		
+		if(\Request::route()->getName() == "admin.categories.sub-categories.index"){
+			$this->template = 'sub-category';
+			//$this->parent_categories = Category::orderBy('name', 'asc')->get();
+			$this->parent_categories   = Category::where('parent_id',null)->get();
+		}
+    }
+	
+	public function updatingSearch()
+    {
+        $this->resetPage();
+    }
+	
+	public function updatedCategoryName($value)
+    {
+        $this->category['slug'] = Str::slug($value, '-');
+    }
+	
+	public function fetchOrder($sortBy, $sortOrder)
+	{
+		$this->sortBy    = $sortBy;
+		$this->sortOrder = $sortOrder;
+	}
+
+    public function render()
+    {
+
+		$parent = Category::where('parent_id',null)->get()->toArray();
+
+				//  echo "<pre>";
+				// 				print_r( $parent);
+				// 				die;		
+        $categories = Category::when($this->search, function($q){
+                            $q->where('id', 'like', '%'.($this->search).'%')
+                              ->orWhere('name', 'like', '%'.($this->search).'%');
+                        })
+						->when($this->template, function($q){
+							if($this->template == 'main-category')
+								$q->parentCategegories();
+							
+							else
+								$q->where('parent_id', '>', 0);
+						})
+                        ->orderBy($this->sortBy, $this->sortOrder)->paginate($this->perpage);
+// echo "string";
+// die;
+				// echo "<pre>";
+				// print_r( $categories);
+				// die;			
+        return view('livewire.admin.categories.view', [
+            'categories' => $categories,
+			'parent' => $parent
+        ]);
+    }
+	
+>>>>>>> Rudraa
 	public function create()
 	{
 		$this->category = $this->mapFields();
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> Rudraa
 	public function mapFields()
 	{
 		$category = Category::find($this->selected_id);
 		//$mediaItems = $category->getImagesAttribute();
 
+<<<<<<< HEAD
 		// $publicUrl = $mediaItems[0]->getFullUrl(); 
 
 		//dd( $publicUrl);
@@ -149,12 +246,44 @@ class Categories extends Component
 				'category.image' => 'required',
 			], $this->rules));
 		} else {
+=======
+       // $publicUrl = $mediaItems[0]->getFullUrl(); 
+
+        //dd( $publicUrl);
+		return [
+		    'name' => $category->name ?? '',
+			'slug' => $category->slug ?? '',
+			'short_description' => $category->short_description ?? '',
+			'parent_id' => $category->parent_id ?? null,
+			'tags'   => $category->tags ?? null,
+		    'category_image_url' => $category->category_image_url ?? '',
+		];
+	}
+	
+	public function edit($id)
+	{
+		$this->selected_id = $id;
+		$this->category    = $this->mapFields();
+
+		//echo "<pre>";
+	//	print_r($this->category);
+	}
+	
+	public function store()
+	{
+		if($this->template == 'main-category'){
+			$this->validate(array_merge([
+				'category.image' => 'required',
+			], $this->rules));
+		}else{
+>>>>>>> Rudraa
 			$this->validate(array_merge([
 				'category.parent_id' => 'required',
 			], $this->rules));
 		}
 
 		$category = new Category;
+<<<<<<< HEAD
 		$category->fill(Arr::only($this->category, [
 			'name',
 			'slug',
@@ -184,11 +313,34 @@ class Categories extends Component
 					// print_r($category);
 					// die;
 
+=======
+	    $category->fill(Arr::only($this->category, ['name', 'slug', 'short_description','parent_id','tags']));
+	   
+	    if($category->save())
+	    {
+			//Upload Image 
+			if(!empty($this->category['image'])){
+				
+				$filename      = preg_replace("/[^a-z0-9\_\-\.]/i", '', time() . $this->category['image']->getClientOriginalName());
+				$folder        = 'categories';
+				
+				try {
+					
+					$category->addMedia($this->category['image']->getRealPath())
+							 ->usingFileName($filename)
+							 ->toMediaCollection($folder, env('FILESYSTEM_DRIVER','local'));
+				   
+				    // echo "<pre>";
+				    // print_r($category);
+					// die;
+								
+>>>>>>> Rudraa
 				} catch (\Exception $e) {
 					//$this->addError('category.image', 'Unable to upload image. Please try again.');
 					//return true;
 				}
 			}
+<<<<<<< HEAD
 
 			$this->selected_id = null;
 			$this->category = $this->mapFields();
@@ -197,15 +349,30 @@ class Categories extends Component
 		}
 	}
 
+=======
+			
+			$this->selected_id = null;
+			$this->category    = $this->mapFields();
+			
+			//show saved message
+		}
+	}
+	
+>>>>>>> Rudraa
 	public function save()
 	{
 		// echo "dssf";
 		// die;
+<<<<<<< HEAD
 		if ($this->template == 'sub-category') {
+=======
+		if($this->template == 'sub-category'){
+>>>>>>> Rudraa
 			$this->validate(array_merge([
 				'category.parent_id' => 'required',
 			], $this->rules));
 		}
+<<<<<<< HEAD
 
 		$category = Category::find($this->selected_id);
 		$category->fill(Arr::only($this->category, [
@@ -262,6 +429,55 @@ class Categories extends Component
 
 			//show saved updated message
 		}
+=======
+		
+	    $category = Category::find($this->selected_id);
+	    $category->fill(Arr::only($this->category, ['name', 'slug', 'short_description','parent_id','tags']));
+	   
+	    if($category->save()){
+		   
+		   if(!empty($this->category['image'])){
+				$this->validate([
+					'category.image' => 'required',
+				]);
+			   
+				//Upload Image 
+				$filename      = preg_replace("/[^a-z0-9\_\-\.]/i", '', time() . $this->category['image']->getClientOriginalName());
+				$folder        = 'categories';
+				
+				try {
+					
+					$media     = MediaCustom::find(optional($category->getMedia('categories')->first())->id);
+					if( $media ){
+						
+						$folder   .= '/'.$media->id;
+						
+						$this->category['image']->storePubliclyAs($folder, $filename, 'local');
+						
+						$media->file_name = $filename;
+						$media->name      = $filename;
+						$media->save();
+						
+					}else{
+						
+						$category->addMedia($this->category['image']->getRealPath())
+								 ->usingFileName($filename)
+								 ->toMediaCollection($folder, env('FILESYSTEM_DRIVER','local'));
+								
+					}
+							
+				} catch (\Exception $e) {
+					$this->addError('category.image', $e->getMessage().'. Unable to upload image. Please try again.');
+					return true;
+				}
+		   }
+		   
+		   $this->selected_id = null;
+		   $this->category    = $this->mapFields();
+		   
+		   //show saved updated message
+	    }
+>>>>>>> Rudraa
 	}
 
 	public function deleteConfirm()
@@ -273,12 +489,20 @@ class Categories extends Component
 		//$this->emit('swal', 'are u sure?', 'warning');
 	}
 
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> Rudraa
 
 
 	public function setSelected($category)
 	{
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> Rudraa
 		$this->selected = $category;
 		$this->emit('showConfirmModal');
 	}
@@ -290,5 +514,9 @@ class Categories extends Component
 	// {
 	// 	$this->selected->delete();
 	// }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> Rudraa
 }
