@@ -37,8 +37,8 @@
                             <img src="{{ $product->product_image_url }}" class="border main-p-thumb mb-2 mx-1"
                                 alt="{{ $product->name }}">
                             @foreach($product->images as $thubnail)
-                                <img src="{{ $thubnail->getUrl() }}" class="border main-p-thumb mb-2 mx-1"
-                                    alt="{{ $product->name }}">
+                            <img src="{{ $thubnail->getUrl() }}" class="border main-p-thumb mb-2 mx-1"
+                                alt="{{ $product->name }}">
                             @endforeach
                         </div>
                         <div class="col-lg-5" data-aos="fade-right" wire:ignore.self data-aos-delay="200">
@@ -49,15 +49,20 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-5 p-0">
+                        <div class="col-lg-6 p-0">
                             <div class="summary entry-summary">
                                 <h4><span class="text-primary text-dark font-weight-bolder">{{ $product->name }}</span>
-                                    {{ $product->product_type->name ?? '' }}</h4>
+                                    {{ $product->product_type->name ?? '' }}
+                                </h4>
                                 <p>{{ $product->short_description }}</p>
                                 <span
                                     class="stock in-stock">{{ $product->qty >= '1' ? "In Stock" : "Out of Stock" }}</span>
-                                <h5 class="d-inline mx-5 px-4 py-1 stock in-stock"> ₹ <span
-                                        class="">{{ $product->price ?? '0'}} </span></h5>
+                                <h5 class="d-inline mx-3 py-1 stock in-stock"> ₹ <span class="">{{ $product->price ?? '0'}} </span></h5>
+                                <a href="{{ $product->link ?? '#' }}" target="__blank" title="Visit Partner"
+                                    class="dt-sc-button filled m-0 rounded text-center"> Buy on 13SQFT
+                                    <p class="text-white text-center" style="font-size: 8px;">(Our Authorized Selling
+                                        Partner)</p>
+                                </a>
                                 <span class="price">
                                     <!--del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₹ </span>100.00</span></del-->
                                     <ins class="d-none"><span class="woocommerce-Price-amount amount"><span
@@ -67,17 +72,13 @@
                                 <div class="privacy-policy pt-4 pl-3">
                                     {!! $product->detail !!}
                                 </div>
-                                <a href="{{ $product->link ?? '#' }}" target="__blank" title="Visit Partner"
-                                    class="dt-sc-button filled m-0 rounded text-center"> Buy on 13SQFT
-                                    <p class="text-white text-center" style="font-size: 8px;">(Our Authorized Selling
-                                        Partner)</p>
-                                </a>
+
                                 <div class="d-flex align-items-center">
                                     @if($product->brochure_url)
-                                        <a href="{{ $product->brochure_url }}" target="_blank" title=""
-                                            class="dt-sc-button medium bordered d-inline-flex align-items-center py-1 mr-2 w-50"><i
-                                                class="fa fa-download fa-2x mr-2"></i> <span><small>Download</small><br>
-                                                Datasheet</a>
+                                    <a href="{{ $product->brochure_url }}" target="_blank" title=""
+                                        class="dt-sc-button medium bordered d-inline-flex align-items-center py-1 mr-2 w-50"><i
+                                            class="fa fa-download fa-2x mr-2"></i> <span><small>Download</small><br>
+                                            Datasheet</a>
                                     @endif
                                     <a href="/downloads/beware-essentials-software.zip" download target="_blank"
                                         title=""
@@ -110,14 +111,14 @@
                                     <h4>Product Specifications</h4>
                                     <table>
                                         @foreach($product->product_specifications ?? [] as $product_specification)
-                                            <tr>
-                                                <th class="bg-transparent text-dark text-left">
-                                                    {{ $product_specification['attribute_name'] ?? '' }}
-                                                </th>
-                                                <th class="bg-transparent text-dark text-left">:</th>
-                                                <td class="text-left">{{ $product_specification['attribute_value'] ?? '' }}
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <th class="bg-transparent text-dark text-left">
+                                                {{ $product_specification['attribute_name'] ?? '' }}
+                                            </th>
+                                            <th class="bg-transparent text-dark text-left">:</th>
+                                            <td class="text-left">{{ $product_specification['attribute_value'] ?? '' }}
+                                            </td>
+                                        </tr>
                                         @endforeach
                                         <tbody>
 
@@ -167,15 +168,15 @@
                                 </div>
                                 <div class="col-md-12 col-sm-12 text-center">
                                     @if (session()->has('message'))
-                                        <div class="mt-3">
-                                            <div class="alert alert-success alert-dismissible fade show">
-                                                {{ session('message') }}
-                                                <button type="button" style="top:-10px" class="close" data-dismiss="alert"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
+                                    <div class="mt-3">
+                                        <div class="alert alert-success alert-dismissible fade show">
+                                            {{ session('message') }}
+                                            <button type="button" style="top:-10px" class="close" data-dismiss="alert"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
+                                    </div>
                                     @endif
                                 </div>
                             </div>
@@ -187,9 +188,9 @@
     </section>
 </div>
 @push('scriptBottom')
-    <script src="{{asset('assets/js/easyzoom.js')}}"></script>
-    <script>
-        // Instantiate EasyZoom plugin
-        jQuery('.easyzoom').easyZoom();
-    </script>
+<script src="{{asset('assets/js/easyzoom.js')}}"></script>
+<script>
+    // Instantiate EasyZoom plugin
+    jQuery('.easyzoom').easyZoom();
+</script>
 @endpush

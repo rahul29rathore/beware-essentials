@@ -93,7 +93,7 @@
 </style>
 @endsection
 @section('title') Beware Essentials | CCTV, Biometric & Security Solutions @endsection
-@section('meta_description') Protect your home and business with CCTV cameras, biometric systems, and access control solutions by Beware Essentials.  @endsection
+@section('meta_description') Protect your home and business with CCTV cameras, biometric systems, and access control solutions by Beware Essentials. @endsection
 @section('meta_keywords')
 CCTV, Biometric, Camera, Beware, Beware Essentials, Business @endsection
 @section('other')
@@ -138,7 +138,7 @@ CCTV, Biometric, Camera, Beware, Beware Essentials, Business @endsection
                 <img src="{{ asset('assets/images/revslider/banner-2.jpg') }}" alt="CCTV cameras" class="w-100">
             </div>
             <div class="item">
-                <img src="{{ asset('assets/images/revslider/banner-3.jpg') }}"  alt="Surveillance Systems & Solutions" class="w-100">
+                <img src="{{ asset('assets/images/revslider/banner-3.jpg') }}" alt="Surveillance Systems & Solutions" class="w-100">
             </div>
         </div>
     </div>
@@ -211,7 +211,7 @@ CCTV, Biometric, Camera, Beware, Beware Essentials, Business @endsection
             </div!-->
     </div>
 </section>
-<section id="primary" class="content-full-width">
+<section id="" class="">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
