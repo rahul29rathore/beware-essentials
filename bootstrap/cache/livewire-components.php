@@ -8,6 +8,8 @@
   'admin.products.product-types' => 'App\\Http\\Livewire\\Admin\\Products\\ProductTypes',
   'admin.products.products' => 'App\\Http\\Livewire\\Admin\\Products\\Products',
   'admin.users' => 'App\\Http\\Livewire\\Admin\\Users',
+  'admin.seotags.create-update-seotags' => 'App\\Http\\Livewire\\Admin\\seotags\\CreateUpdateSeotags',
+  'admin.seotags.seotags' => 'App\\Http\\Livewire\\Admin\\seotags\\seotags',
   'carrer' => 'App\\Http\\Livewire\\Carrer',
   'distributer' => 'App\\Http\\Livewire\\Distributer',
   'frontend.categories' => 'App\\Http\\Livewire\\Frontend\\Categories',
