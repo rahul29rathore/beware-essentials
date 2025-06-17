@@ -18,7 +18,7 @@
 					<aside id="text-2" class="widget widget_text">
 						<div class="textwidget">
 							<p>
-								<img loading="lazy" src="{{asset('assets/images/leadform-logo.png')}}" class="mb-3" alt="" width="120" height="54">
+								<img loading="lazy" src="{{asset('assets/images/leadform-logo.png')}}" class="mb-3" alt="leadform-logo" width="120" height="54">
 								<br> 
 								We are committed to providing high-quality CCTV Surveillance residential, and industrial applications. 
 							

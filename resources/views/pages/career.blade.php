@@ -27,7 +27,7 @@
     <div class="container">
         <div class="row pt-0">
             <div class="col-lg-8 col-md-8">
-                <h2 class="text-uppercase mb-4">Job Vacancies</h2>
+                <h2 class="text-uppercase mb-4">Job Vacan<cies</h2>
                 {{-- <p>There are currently no jobs vacancies.</p> --}}
                 
                 <div class="job-container">

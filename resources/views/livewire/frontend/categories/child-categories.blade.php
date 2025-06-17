@@ -14,7 +14,7 @@
 					</li>
 				</ol>
 			</nav>
-			<p class="type-script text-lg-left position-relative mt-3">FIRST CHOICE FOR <span id="typed" class="text-primary"></span></p>
+			<p class="type-script text-lg-left position-relative mt-3"><h2 class="type-script text-lg-left position-relative mt-3">FIRST CHOICE FOR <span id="typed" class="text-primary"></span></h2> </p>
 		</div>
 	</section>
 	<div class="container">
@@ -69,7 +69,7 @@
 							<div class="product-link">
 
 								<a href="{{ route('products', $category->slug ) }}">
-									<img src="{{ $category->category_image_url }}" alt="image not found!">
+									<img src="{{ $category->category_image_url }}" alt="lock">
 									<h6><span data-mh="cat-name">{{ $category->name }}</span></h6>
 									<!--img src="{{ $category->category_image_url }}" alt="image not found!"-->
 								</a>

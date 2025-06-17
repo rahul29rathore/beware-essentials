@@ -38,7 +38,7 @@
             </div>
             
             <div class="col-lg-12 mb-5" data-aos="fade-right">
-                <h5>Why Choose Beware Essentials?</h5>
+                <h2 class="h5">Why Choose Beware Essentials?</h2>
                 <div class="dt-sc-small-separator "></div>
                 <ul class="list" style="margin-left: 18px;">
                     <li>Make-in-India with Global Tech </li>
@@ -65,14 +65,14 @@
             </div>
             
             <div class="col-lg-12 mb-5">
-                <img src="{{asset('assets/images/collarge.png')}}" class="img-fluid" alt="">
+                <img src="{{asset('assets/images/collarge.png')}}" class="img-fluid" alt="collarge">
             </div>
             <div class="wpb_wrapper row m-0">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
                     <div class="ult-item-wrap p-3 br-20" data-aos="fade-up" data-aos-delay="300" data-animation="animated no-animation">
                         <div class="dt-sc-icon-box type4 ">
                             <div class="icon-wrapper">
-                                <img width="75" height="75" src="{{asset('assets/images/mission.png')}}" class="attachment-full" alt="">
+                                <img width="75" height="75" src="{{asset('assets/images/mission.png')}}" class="attachment-full" alt="mission">
                             </div>
                             <div class="icon-content">
                                 <h4><a href="#" title="" target="_self" tabindex="0">Our Mission</a></h4>
@@ -82,13 +82,13 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-none d-lg-block" data-aos="fade-up" data-aos-delay="800">
-                    <img src="{{asset('assets/images/dome-camera.png')}}" class="dome-cam-img" alt="">
+                    <img src="{{asset('assets/images/dome-camera.png')}}" class="dome-cam-img" alt="dome-camera">
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
                     <div class="ult-item-wrap p-3 br-20" data-aos="fade-up" data-aos-delay="300" data-animation="animated no-animation">
                         <div class="dt-sc-icon-box type4 ">
                             <div class="icon-wrapper">
-                                <img width="75" height="75" src="{{asset('assets/images/vision.png')}}" class="attachment-full" alt="">
+                                <img width="75" height="75" src="{{asset('assets/images/vision.png')}}" class="attachment-full" alt="vision">
                             </div>
                             <div class="icon-content">
                                 <h4><a href="#" title="" target="_self" tabindex="0">Our Vision</a></h4>
@@ -101,7 +101,7 @@
                     <div class="ult-item-wrap p-3 br-20" data-aos="fade-up" data-aos-delay="300" data-animation="animated no-animation">
                         <div class="dt-sc-icon-box type4 ">
                             <div class="icon-wrapper">
-                                <img width="75" height="75" src="{{asset('assets/images/quality.png')}}" class="attachment-full" alt="">
+                                <img width="75" height="75" src="{{asset('assets/images/quality.png')}}" class="attachment-full" alt="quality">
                             </div>
                             <div class="icon-content">
                                 <h4><a href="#" title="" target="_self" tabindex="0">Our Goals</a></h4>
@@ -119,7 +119,7 @@
                     <div class="ult-item-wrap p-3 br-20" data-aos="fade-up" data-aos-delay="300" data-animation="animated no-animation">
                         <div class="dt-sc-icon-box type4 ">
                             <div class="icon-wrapper">
-                                <img width="75" height="75" src="{{asset('assets/images/quality.png')}}" class="attachment-full" alt="">
+                                <img width="75" height="75" src="{{asset('assets/images/quality.png')}}" class="attachment-full" alt="quality">
                             </div>
                             <div class="icon-content">
                                 <h4><a href="#" title="" target="_self" tabindex="0">Our Services</a></h4>

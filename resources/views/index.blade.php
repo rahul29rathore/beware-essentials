@@ -143,56 +143,15 @@ CCTV, Biometric, Camera, Beware, Beware Essentials, Business @endsection
         </div>
     </div>
 </section>
-<!--div id="slider">
-        <div class="dt-sc-main-slider" id="dt-sc-rev-slider">
-            <p class="rs-p-wp-fix"></p>
-            <rs-module-wrap id="rev_slider_2_1_wrapper" data-source="gallery"
-                style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-                <rs-module id="rev_slider_2_1" data-version="6.3.4">
-                    <rs-slides>
-                        <rs-slide data-key="rs-7" data-title="Slide" data-thumb="" data-anim="ei:d;eo:d;s:600;t:fade;sl:d;">
-                            <img src="{{ asset('assets/images/revslider/banner-4.jpg') }}" title="Home II"
-                                class="rev-slidebg" data-no-retina>
-                        </rs-slide>
-                        <rs-slide data-key="rs-7" data-title="Slide" data-thumb=""
-                            data-anim="ei:d;eo:d;s:600;t:fade;sl:d;">
-                            <img src="{{ asset('assets/images/revslider/banner-5.jpg') }}" title="Home II"
-                                class="rev-slidebg" data-no-retina>
-                        </rs-slide>
-                        <rs-slide data-key="rs-7" data-title="Slide" data-thumb=""
-                            data-anim="ei:d;eo:d;s:600;t:fade;sl:d;">
-                            <img src="{{ asset('assets/images/revslider/banner-6.jpg') }}" title="Home II"
-                                class="rev-slidebg" data-no-retina>
-                        </rs-slide>
-                        <rs-slide data-key="rs-6" data-title="Slide" data-thumb=""
-                            data-anim="ei:d;eo:d;s:600;t:fade;sl:d;">
-                            <img src="{{ asset('assets/images/revslider/banner-1.jpg') }}" title="Home II"
-                                class="rev-slidebg" data-no-retina>
-                        </rs-slide>
-                        <rs-slide data-key="rs-5" data-title="Slide" data-thumb=""
-                            data-anim="ei:d;eo:d;s:600;t:fade;sl:d;">
-                            <img src="{{ asset('assets/images/revslider/banner-2.jpg') }}" title="Home II"
-                                class="rev-slidebg" data-no-retina>
-                        </rs-slide>
-                        <rs-slide data-key="rs-7" data-title="Slide" data-thumb=""
-                            data-anim="ei:d;eo:d;s:600;t:fade;sl:d;">
-                            <img src="{{ asset('assets/images/revslider/banner-3.jpg') }}" title="Home II"
-                                class="rev-slidebg" data-no-retina>
-                        </rs-slide>
-                    </rs-slides>
-                </rs-module>
-            </rs-module-wrap>
-        </div>
-    </div-->
 <section id="primary" class="content-full-width pb-0">
     <div class="container">
         <div class="row pt-0">
             <div class="col-lg-12 text-center">
-                <img src="{{ asset('assets/images/img1-1.png') }}" data-aos="fade-down">
+                <img src="{{ asset('assets/images/img1-1.png') }}" data-aos="fade-down" alt="security-camera">
                 <div class="dt-sc-title script-with-sub-title">
                     <h4 data-aos="fade-down" data-aos-delay="100">Beware - Be Assured, Be Secured!</h4>
                     <h2 data-aos="fade-down" data-aos-delay="200">CCTV Surveillance Systems For Commercial, Residential & Industrial</h2>
-                    {{-- <p data-aos="fade-down" data-aos-delay="300">We offer state-of-the-art CCTV surveillance systems & solutions, with a multitude of quality and performance features, that differentiates our products, services & solutions from our competitors. Secure your residential, commercial & industrial properties with BEWARE CCTV surveillance systems to protect your home or business facilities with top-notch, durable & "Made-in-India" products.</p> --}}
+                    <!-- <p data-aos="fade-down" style="font-size:18px;" data-aos-delay="300">We offer state-of-the-art CCTV surveillance systems & solutions, with a multitude of quality and performance features, that differentiates our products, services And solutions from our competitors. Secure your residential, commercial & industrial properties with BEWARE CCTV surveillance systems to protect your home or business facilities with top-notch, durable & "Made-in-India" products.</p>  -->
                 </div>
             </div>
         </div>
@@ -217,7 +176,7 @@ CCTV, Biometric, Camera, Beware, Beware Essentials, Business @endsection
             <div class="col-lg-6">
                 <div class="dt-sc-image-caption" data-aos="fade-right">
                     <div class="dt-sc-image-wrapper">
-                        <img src="{{ asset('assets/images/img8-2.jpg') }}" class="img-fluid">
+                        <img src="{{ asset('assets/images/img8-2.jpg') }}" class="img-fluid" alt="Image">
                     </div>
                 </div>
             </div>
@@ -247,150 +206,9 @@ CCTV, Biometric, Camera, Beware, Beware Essentials, Business @endsection
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <!--h2 class="section-title">Featured Products</h2!-->
-                {{-- <div class="featured-product-slider slider w-100">
-                    <div>
-                        <div class="col-xl-12 p-3">
-                            <div class="product-default">
-                                <figure>
-                                    <a href="demo21-product.html">
-                                        <img src="{{asset('/storage/app/public/product-images/5/1707456710b.png')}}">
-                </a>
-                <div class="btn-icon-group">
-                    <a href="demo21-product.html" class="btn-icon btn-add-cart">
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-                <a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View">Quick View</a>
-                </figure>
-                <div class="product-details">
-                    <div class="category-wrap">
-                        <div class="category-list">
-                            <a href="demo21-shop.html" class="product-category">category</a>
-                        </div>
-                    </div>
-                    <h3 class="product-title">
-                        <a href="demo21-product.html">Digital Camera 16x</a>
-                    </h3>
-                    <div class="price-box">
-                        <span class="product-price">$101.00 &ndash; $111.00</span>
-                    </div>
-                </div>
+                @livewire('frontend.featured-product')
             </div>
         </div>
-    </div>
-    <div>
-        <div class="col-xl-12 p-3">
-            <div class="product-default">
-                <figure>
-                    <a href="demo21-product.html">
-                        <img src="https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/products/product-1.jpg" width="217" height="217" alt="product">
-                    </a>
-                    <div class="btn-icon-group">
-                        <a href="demo21-product.html" class="btn-icon btn-add-cart">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View">Quick View</a>
-                </figure>
-                <div class="product-details">
-                    <div class="category-wrap">
-                        <div class="category-list">
-                            <a href="demo21-shop.html" class="product-category">category</a>
-                        </div>
-                    </div>
-                    <h3 class="product-title">
-                        <a href="demo21-product.html">Digital Camera 16x</a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="col-xl-12 p-3">
-            <div class="product-default">
-                <figure>
-                    <a href="demo21-product.html">
-                        <img src="https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/products/product-1.jpg" width="217" height="217" alt="product">
-                    </a>
-                    <div class="btn-icon-group">
-                        <a href="demo21-product.html" class="btn-icon btn-add-cart">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View">Quick View</a>
-                </figure>
-                <div class="product-details">
-                    <div class="category-wrap">
-                        <div class="category-list">
-                            <a href="demo21-shop.html" class="product-category">category</a>
-                        </div>
-                    </div>
-                    <h3 class="product-title">
-                        <a href="demo21-product.html">Digital Camera 16x</a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="col-xl-12 p-3">
-            <div class="product-default">
-                <figure>
-                    <a href="demo21-product.html">
-                        <img src="https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/products/product-1.jpg" width="217" height="217" alt="product">
-                    </a>
-                    <div class="btn-icon-group">
-                        <a href="demo21-product.html" class="btn-icon btn-add-cart">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View">Quick View</a>
-                </figure>
-                <div class="product-details">
-                    <div class="category-wrap">
-                        <div class="category-list">
-                            <a href="demo21-shop.html" class="product-category">category</a>
-                        </div>
-                    </div>
-                    <h3 class="product-title">
-                        <a href="demo21-product.html">Digital Camera 16x</a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="col-xl-12 p-3">
-            <div class="product-default">
-                <figure>
-                    <a href="demo21-product.html">
-                        <img src="https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/products/product-1.jpg" width="217" height="217" alt="product">
-                    </a>
-                    <div class="btn-icon-group">
-                        <a href="demo21-product.html" class="btn-icon btn-add-cart">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View">Quick View</a>
-                </figure>
-                <div class="product-details">
-                    <div class="category-wrap">
-                        <div class="category-list">
-                            <a href="demo21-shop.html" class="product-category">category</a>
-                        </div>
-                    </div>
-                    <h3 class="product-title">
-                        <a href="demo21-product.html">Digital Camera 16x</a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div> --}}
-    @livewire('frontend.featured-product')
-    </div>
-    </div>
     </div>
 </section>
 <section class="header-banner">

@@ -20,7 +20,7 @@
             <span class="fa default"></span>
             <span class="current">Contact Us</span>
         </div>
-        <p class="type-script text-lg-left position-relative mt-3">FIRST CHOICE FOR <span id="typed" class="text-primary"></span></p>
+        <h2 class="type-script text-lg-left position-relative mt-3">FIRST CHOICE FOR <span id="typed" class="text-primary"></span></h2>
     </div>
 </section>
 <div class="container">

@@ -22,7 +22,7 @@
         <section id="primary" class="content-full-width">
             <div class="row pt-0">
                 <div class="col-lg-12 col-md-12 privacy-policy" data-aos="fade-left">
-                    <p><strong>Last updated:</strong> February 24, 2022</p>
+                    <p><h2 class="h6">Last updated: February 24, 2022</h2></p>
                     <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
                     <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
                     <h3>Interpretation and Definitions</h3>
